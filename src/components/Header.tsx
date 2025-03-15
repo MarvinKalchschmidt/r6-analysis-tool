@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <header
-      className={`flex items-center justify-between px-4 lg:px-16 2xl:px-32 gap-16 2xl:gap-48"
+      className={`flex items-center justify-between gap-16 2xl:gap-48"
       }`}
     >
       <Link href="/" className="flex items-center justify-between gap-4">

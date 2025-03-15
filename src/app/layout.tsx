@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anek.variable} antialiased pt-20`}>
+      <body className={`${anek.variable} antialiased`}>
         <Header />
         <main>{children}</main>
       </body>
