@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Anek_Gurmukhi } from "next/font/google";
 import "@/styles/globals.css";
+import Header from "@/components/Header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const anek = Anek_Gurmukhi({
+  subsets: ["gurmukhi"],
+  display: "swap",
+  variable: "--font-anek-gurmukhi",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>{children}</body>
+      <body className={`${anek.variable} antialiased pt-20`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
