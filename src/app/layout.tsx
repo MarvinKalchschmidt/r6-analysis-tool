@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Anek_Gurmukhi } from "next/font/google";
+import { Inter, Goldman } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 
-const anek = Anek_Gurmukhi({
-  subsets: ["gurmukhi"],
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
-  variable: "--font-anek-gurmukhi",
+});
+
+const goldman = Goldman({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-goldman",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anek.variable} antialiased`}>
+      <body className={`${inter.variable} ${goldman.variable} antialiased`}>
         <Header />
         <main>{children}</main>
       </body>

@@ -3,26 +3,24 @@
 :root {
   --background: #131415;
   --foreground: #ffffff;
-  --header-padding: 6px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --primary: #131415;
+  --secondary: #161718;
+  --tertiary: #060708;
+  --primaryText: #ffffff;
+  --primaryText: #a1a395;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  @apply px-4 lg:px-16;
+  @apply bg-[var(--background)] text-[var(--foreground)] font-(family-name:--font-inter);
 }
 
 header {
-  @apply fixed top-0 z-50 w-full h-12;
+  @apply fixed top-0 z-50 w-full h-16;
 }
 
 main {
-  @apply pt-12;
+  @apply p-16;
 }
