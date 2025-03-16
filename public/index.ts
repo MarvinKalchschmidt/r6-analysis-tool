@@ -16,6 +16,15 @@ import SSG from "./Spacestation_Gaming.png";
 import BDS from "./Team_BDS.png";
 import FLCN from "./Team_Falcons.png";
 import NWNTD from "./Unwanted.png";
+import Bank from "./Bank.jpg";
+import Border from "./border.jpg";
+import Chalet from "./chalet.jpg";
+import Clubhouse from "./Clubhouse.jpg";
+import Consulate from "./Consulate.jpg";
+import Kafe from "./Kafe_Dostoyevsky.jpg";
+import Lair from "./lair.png";
+import Labs from "./Nighthaven_Labs.jpg";
+import Skyscraper from "./skyscraper.jpg";
 
 export {
   /* Tournament Logos*/
@@ -36,4 +45,14 @@ export {
   BDS,
   FLCN,
   NWNTD,
+  /* Maps*/
+  Bank,
+  Border,
+  Chalet,
+  Clubhouse,
+  Consulate,
+  Kafe,
+  Lair,
+  Labs,
+  Skyscraper,
 };

@@ -1,7 +1,26 @@
 // This file will eventuall be replaced by API calls
 
 import { StaticImageData } from "next/image";
-import { SI, FAZE, FURIA, OXG, RCAC, SSG, BDS, FLCN, NWNTD } from "../public";
+import {
+  SI,
+  FAZE,
+  FURIA,
+  OXG,
+  RCAC,
+  SSG,
+  BDS,
+  FLCN,
+  NWNTD,
+  Bank,
+  Border,
+  Chalet,
+  Clubhouse,
+  Consulate,
+  Kafe,
+  Labs,
+  Lair,
+  Skyscraper,
+} from "../public";
 
 export type Score = {
   slug: string;
@@ -145,3 +164,95 @@ export const NAV_LINKS = [
   { id: "teams", title: "teams" },
   { id: "tournaments", title: "tournaments" },
 ];
+
+export const MAP_BANS: MAPBAN[] = [
+  { id: 1, map: "Bank", Team: "BDS", image: Bank, option: "pick" },
+  { id: 2, map: "Border", Team: "FaZE", image: Border, option: "ban" },
+  { id: 3, map: "Chalet", Team: "BDS", image: Chalet, option: "ban" },
+  { id: 4, map: "Club", Team: "FaZe", image: Clubhouse, option: "pick" },
+  { id: 5, map: "Consulat", Team: "BDS", image: Consulate, option: "ban" },
+  { id: 6, map: "Kafe", Team: "FaZe", image: Kafe, option: "ban" },
+  { id: 7, map: "Labs", Team: "BDS", image: Labs, option: "pick" },
+  { id: 8, map: "Lair", Team: "FaZe", image: Lair, option: "pick" },
+  {
+    id: 9,
+    map: "Sky",
+    Team: "BDS",
+    image: Skyscraper,
+    option: "pick",
+  },
+];
+
+export type MAPBAN = {
+  id: number;
+  map: string;
+  Team: string;
+  image: StaticImageData;
+  option: string;
+};
+
+export const MATCH_0 = [
+  { id: 0, map: "Bank", scoreTeamA: "9", scoreTeamB: "7" },
+  { id: 1, map: "Club", scoreTeamA: "5", scoreTeamB: "7" },
+  { id: 2, map: "Labs", scoreTeamA: "5", scoreTeamB: "7" },
+  { id: 3, map: "Lair", scoreTeamA: "4", scoreTeamB: "7" },
+  { id: 4, map: "Sky", scoreTeamA: "-", scoreTeamB: "-" },
+];
+
+export const STATS_0: STATS[] = [
+  {
+    Player: "Solotov",
+    EPS: 89,
+    KD: "10-13 (-3)",
+    Entry: "3-2 (+1)",
+    KOST: "56%",
+    KPR: 0.62,
+    HS: "50%",
+  },
+  {
+    Player: "LikEfac",
+    EPS: 92,
+    KD: "12-12 (0)",
+    Entry: "1-4 (-3)",
+    KOST: "50%",
+    KPR: 0.75,
+    HS: "42%",
+  },
+  {
+    Player: "Shaiiko",
+    EPS: 94,
+    KD: "10-11 (-1)",
+    Entry: "1-2 (-1)",
+    KOST: "69%",
+    KPR: 0.62,
+    HS: "90%",
+  },
+  {
+    Player: "BriD",
+    EPS: 144,
+    KD: "18-8 (+10)",
+    Entry: "1-0 (+1)",
+    KOST: "88%",
+    KPR: 1.12,
+    HS: "44%",
+  },
+  {
+    Player: "Yuzus",
+    EPS: 112,
+    KD: "14-10 (+4)",
+    Entry: "2-0 (+2)",
+    KOST: "62%",
+    KPR: 0.88,
+    HS: "21%",
+  },
+];
+
+export type STATS = {
+  Player: string;
+  EPS: number;
+  KD: string;
+  Entry: string;
+  KOST: string;
+  KPR: number;
+  HS: string;
+};
