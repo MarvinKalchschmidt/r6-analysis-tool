@@ -1,5 +1,11 @@
 /* Tournament Logos*/
 import SI from "./Six_Invitational.png";
+import APL from "./APL.png";
+import BLAST from "./BLAST.png";
+import EML from "./EML.png";
+import NAL from "./NAL.png";
+import Reload from "./Reload.png";
+import SAL from "./SAL.png";
 
 /* Team Logos*/
 import FAZE from "./FaZe_Clan.png";
@@ -14,6 +20,12 @@ import NWNTD from "./Unwanted.png";
 export {
   /* Tournament Logos*/
   SI,
+  APL,
+  BLAST,
+  EML,
+  NAL,
+  Reload,
+  SAL,
 
   /* Team Logos*/
   FAZE,
