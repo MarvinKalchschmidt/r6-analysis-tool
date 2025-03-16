@@ -2,24 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/components/Button";
 import Logo from "../../public/logo.svg";
-import { useRouter } from "next/navigation";
-
-const NAV_LINKS = [
-  { id: "", title: "home" },
-  { id: "matches", title: "matches" },
-  { id: "teams", title: "teams" },
-  { id: "tournaments", title: "tournaments" },
-];
+import { NAV_LINKS } from "@/constants";
 
 export default function Header() {
-  const router = useRouter();
-
-  const handleClick = (redirectPath: string) => {
-    router.push(redirectPath);
-  };
-
   return (
     <header
       className={`flex items-center justify-between bg-(--tertiary) px-4 lg:px-16 gap-24 2xl:gap-48 "
