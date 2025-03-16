@@ -9,8 +9,9 @@
   --primary: #131415;
   --secondary: #161718;
   --tertiary: #060708;
+  --lightGray: #1d1e21;
   --primaryText: #ffffff;
-  --primaryText: #a1a395;
+  --secondaryText: #a1a395;
   --orange: #ff6900;
   --blue: #0693e3;
 }
